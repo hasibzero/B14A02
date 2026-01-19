@@ -1,0 +1,95 @@
+*{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+
+.btn{
+    padding: 12.5px 16px;
+    background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));;
+}
+.banner{
+    background-image: url(./assets/hero-bg.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 100px 625px;
+    /* min-height: 100vh; */
+    display: flex;
+}
+.image{
+    position: relative;
+    width: fit-content;
+   margin: 0 auto;
+
+}
+.circle{
+    width: 100%;
+    display: block;
+
+}
+.mic{
+    position: absolute;
+    top:25%;
+    left: 35%;
+    margin: 0 auto;
+
+}
+.badge{
+    position: absolute;
+    top: 5%;
+    right: 0;
+    background: #00ff88;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.hero-container{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.subscribe{
+    color: #00ff88;
+    padding: 12.5px 16px;
+    border: 1px solid #00ff88;
+    margin-left: 8px;
+}
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 80px;
+    padding-bottom: 120px;
+}
+.card{
+    margin-bottom: 16;
+    
+    gap: 8;
+
+}
+.card h1{
+    color: #00FF88;
+    font-size: 48px;
+    font-weight: 900;
+    
+}
+@media screen and (max-width: 576px){
+    .cardgrid{
+        grid-template-columns: 1fr;
+    }
+}
