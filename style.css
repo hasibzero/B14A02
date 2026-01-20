@@ -49,13 +49,14 @@
 .badge{
     position: absolute;
     top: 5%;
-    right: 0;
+    right: 5px;
     background: #00ff88;
     color: black;
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 18px;
     font-weight: bold;
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
 
 }
 .hero-container{
@@ -147,6 +148,7 @@
   .badge{
      top: 35%;
      right: 0;
+     padding: 6px 12px;
   }
   .About, .card-container{
     padding-top: 40px;
