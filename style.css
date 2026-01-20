@@ -11,7 +11,7 @@
 .banner{
     background-image: url(./assets/hero-bg.png) ;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     justify-items: center;
     text-align: center;
@@ -19,19 +19,24 @@
     color: white;
     max-width: 1600px;
     margin: 0 auto;
-    padding: 100px 625px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
     /* min-height: 100vh; */
     display: flex;
 }
 .image{
     position: relative;
-    width: fit-content;
-   margin: 0 auto;
+    /* width: fit-content; */
+    margin: 0 auto;
+
 
 }
 .circle{
+    display: flex;
     width: 100%;
-    display: block;
+    /* display: block; */
 
 }
 .mic{
@@ -69,18 +74,33 @@
     margin-left: 8px;
 }
 .card-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     align-items: center;
     justify-content: center;
     text-align: center;
     gap: 80px;
     padding-bottom: 120px;
 }
-.card{
-    margin-bottom: 16;
+.cardgrid .grid{
+    padding: 40px;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+}
+.cardgrid .grid img{
+    margin-bottom: 16px;
+}
+.cardgrid .grid p{
+    margin-bottom: 16px;
+    color: #ffffff;
+    opacity: 0.6;
+    line-height: 24px;
+}
+.cardgrid .grid h2{
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 24px;
     
-    gap: 8;
-
 }
 .card h1{
     color: #00FF88;
@@ -89,7 +109,42 @@
     
 }
 @media screen and (max-width: 576px){
-    .cardgrid{
-        grid-template-columns: 1fr;
-    }
+   .banner{
+    padding: 100px 0;
+    max-width: 576px;
+    max-height: 555px;
+    
+    background-size: contain;
+
+    
+  }
+  .image{
+    padding-top: 25%;
+    /* width: 65%; */
+    max-width: 200px;
+    
+  }
+  .circle{
+    width: 100%;
+    /* padding-top: 50%;
+    padding-left: 50%; */
+  }
+  .mic{
+    width: 25%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .badge{
+     top: 35%;
+     right: 0;
+  }
+  .About, .card-container{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .card-container{
+    grid-template-columns: repeat(2,1fr);
+  }
+   
 }
